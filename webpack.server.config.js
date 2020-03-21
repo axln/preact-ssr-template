@@ -21,11 +21,7 @@ module.exports = (env, argv) => ({
                     extensions: ['.js', '.jsx']
                 },
                 loader: 'babel-loader'
-            },
-            /*{
-                test: /\.html$/,
-                loader: 'raw-loader'
-            }*/
+            }
         ]
     },
     plugins: [
