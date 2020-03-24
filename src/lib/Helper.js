@@ -21,6 +21,7 @@ export const htmlShell = (content, state = {}) => `<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>webpack learn</title>
+    <link href="/bundle.css" rel="stylesheet"/>
     <script>window.__STATE__=${JSON.stringify(state)}</script>
     <script src="/bundle.js"></script>
 </head>
