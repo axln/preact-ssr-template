@@ -5,10 +5,10 @@ export function Nav() {
     return (
         <nav>
             <div>
-                <Link href='/'>Home</Link>
+                <a href='/'>Home</a>
             </div>
             <div>
-                <Link href='/about'>About</Link>
+                <a href='/about'>About</a>
             </div>
         </nav>
     );

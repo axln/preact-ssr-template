@@ -18,7 +18,8 @@ function renderPage(url, state) {
             <AppRouter url={url}/>
         </Provider>
     );
-    return htmlShell(renderedString, store.getState());
+    //return htmlShell(renderedString, store.getState());
+    return htmlShell();
 }
 
 const staticPath = resolve(__dirname, '../../dist');

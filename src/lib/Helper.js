@@ -17,9 +17,10 @@ export function getStateFromCookies({ s }) {
     }
 }
 
-export const htmlShell = (content, state = {}) => `<!DOCTYPE html>
+export const htmlShell = (content = '', state = {}) => `<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>webpack learn</title>
     <script>window.__STATE__=${JSON.stringify(state)}</script>
     <script src="/bundle.js"></script>
