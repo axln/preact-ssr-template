@@ -1,4 +1,5 @@
-import { h, render } from 'preact';
+import 'preact/debug'
+import { h, hydrate } from 'preact';
 import { Provider } from 'unistore/preact';
 import { AppRouter } from '../component/AppRouter';
 import { initStore } from '../store';
@@ -6,7 +7,7 @@ import { initStore } from '../store';
 const store = initStore(window.__STATE__);
 
 window.addEventListener('DOMContentLoaded', () => {
-    render(
+    hydrate(
         <Provider store={store}>
             <AppRouter/>
         </Provider>,
